@@ -1,29 +1,29 @@
 import { useEffect, useState } from "react"
 import { Login } from "./Components/Auth/Login"
-import AdminDashboard from "./Components/Dashbpard/AdminDashboard"
-import EmployeeDashboard from "./Components/Dashbpard/EmployeeDashboard"
-import { getLocalStorage, setLocalStorage } from "./Utlis/LocalStorage"
+import AdminDashboard from "./Components/Dashboard/AdminDashboard"
+import EmployeeDashboard from "./Components/Dashboard/EmployeeDashboard"
+import { useContext } from "react"
+import { AuthContext } from "./Context/AuthProvider"
 
 
 function App() {
+  const [user, setUser] = useState()
+  const authData = useContext(AuthContext)
   
-  const [user,setUser] = useState()
 
   const handleLogin = (email, password) => {
-    console.log(email,password);
-    
-  }
-
-  handleLogin()
-  
-
-  return (
-    <>
-    {!user ? <Login/> : ''}
-    {/* <EmployeeDashboard/> */}
-    {/* <AdminDashboard/> */}
-    </>
-  )
+    if (email == "admin@me.com" && password == "123"){
+      setUser("admin")} 
+      else if (){
+        setUser("employee")}
+        else{alert("Invalid Crendtials");
+        }}
+return (
+<>
+{!user ? <Login handleLogin= {handleLogin}/> :''}
+{user == "admin" ? <AdminDashboard/> : <EmployeeDashboard/>}
+{/* {user == "employee" ? <EmployeeDashboard/> : ''} */}
+</>
+)
 }
-
 export default App

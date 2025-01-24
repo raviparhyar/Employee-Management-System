@@ -38,15 +38,6 @@ const TaskList = () => {
           <h1 className='font-bold mt-5 text-2xl'>Make a Youtube Video</h1>
           <p className='text-sm mt-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi esse libero provident at eveniet illo accusantium iste distinctio itaque beatae.</p>
         </div>
-
-        <div className='flex-shrink-0 bg-gray-500 p-4 h-full w-[300px] rounded-xl'>
-        <div className='flex items-center justify-between p-4'>
-            <h3 className='bg-red-700 rounded font-semibold px-2'>High</h3>
-            <h4 className='font-medium'>25 Dec 2024</h4>
-          </div>
-          <h1 className='font-bold mt-5 text-2xl'>Make a Youtube Video</h1>
-          <p className='text-sm mt-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi esse libero provident at eveniet illo accusantium iste distinctio itaque beatae.</p>
-        </div>
     </div>
   )}
 
