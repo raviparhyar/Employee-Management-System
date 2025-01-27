@@ -10,18 +10,6 @@ function App() {
   const [user, setUser] = useState(null)
   const [loggedInUserData, setLoggedInUserData] = useState(null)
   const [userData, setUserData]= useContext(AuthContext)
-  
-  // useEffect(() => {
-  
-  //   if(authData){
-  //     const loggedInUser = localStorage.getItem("loggedInUser")
-  //     if(loggedInUser){
-  //       setUser(loggedInUser.role)
-  //     }
-  //   }
-  
-  // }, [])
-  
 
 
 const handleLogin = (email, password) => {
